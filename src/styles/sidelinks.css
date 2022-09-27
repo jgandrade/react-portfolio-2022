@@ -1,0 +1,21 @@
+.side-links {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.side-links ul {
+  display: flex;
+}
+.side-links ul li {
+  margin: 0em 0.3em;
+}
+.side-links ul .linkedIn {
+  margin-left: 0.7em;
+}
+
+@media only screen and (max-width: 576px) {
+  .side-links {
+    display: none;
+  }
+}/*# sourceMappingURL=sidelinks.css.map */
