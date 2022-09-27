@@ -4,11 +4,11 @@ import '../styles/nav.css';
 function Nav() {
     return (
         <nav>
-            <h1>jg.</h1>
+            <a href='#' style={{ textDecoration: "none" }}><h1>jg.</h1></a>
             <ul>
-                <li>About</li>
-                <li>Work</li>
-                <li>Contact</li>
+                <a href='#' style={{ textDecoration: "none" }}><li>About</li></a>
+                <a href='#' style={{ textDecoration: "none" }}><li>Work</li></a>
+                <a href='#' style={{ textDecoration: "none" }}><li>Contact</li></a>
             </ul>
         </nav>
     )

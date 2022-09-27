@@ -11,6 +11,22 @@
   --main-transition: cubic-bezier(0.18, 1.25, 0.55, 1.05);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111111;
+}
+
+::-moz-selection {
+  color: rgb(250, 99, 99);
+}
+
+::selection {
+  color: rgb(250, 99, 99);
+}
+
 h1 {
   font-family: "Source Serif Pro";
   color: var(--main-color);
@@ -31,8 +47,4 @@ li {
   text-decoration: none;
   list-style-type: none;
   color: var(--main-color);
-}
-
-body {
-  background-color: #111111;
 }/*# sourceMappingURL=styles.css.map */
