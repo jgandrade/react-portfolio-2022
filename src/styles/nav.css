@@ -7,9 +7,6 @@ nav {
   align-items: center;
   padding: 0em 5em;
 }
-nav h1 {
-  width: 50%;
-}
 nav ul {
   display: flex;
   justify-content: space-around;

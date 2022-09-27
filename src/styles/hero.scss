@@ -1,0 +1,25 @@
+.hero {
+    width: 100%;
+    padding: 5em 0 0 10em;
+    .hero-name {
+        width: 500px;
+
+        h2 {
+            font-size: 5em;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero {
+        width: 100%;
+        padding: 5em 0 0 1.5em;
+        .hero-name {
+            width: 320px;
+
+            h2 {
+                font-size: 3em;
+            }
+        }
+    }
+}

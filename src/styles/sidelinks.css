@@ -9,9 +9,13 @@
 }
 .side-links ul li {
   margin: 0em 0.3em;
+  transition: all 0.3s var(--main-transition);
 }
 .side-links ul .linkedIn {
   margin-left: 0.7em;
+}
+.side-links ul a:hover li {
+  transform: translateY(-10px);
 }
 
 @media only screen and (max-width: 576px) {

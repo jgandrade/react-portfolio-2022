@@ -8,6 +8,7 @@
 :root {
   --main-color: #eeeeee;
   --secondary-color: #222222;
+  --main-transition: cubic-bezier(0.18, 1.25, 0.55, 1.05);
 }
 
 h1 {
