@@ -7,9 +7,9 @@ function Nav() {
         <nav>
             <a href='#' style={{ textDecoration: "none" }}><h1 style={{ color: "#eeeeee" }}>jg.</h1></a>
             <ul>
-                <a href='#' style={{ textDecoration: "none" }}><li style={{ color: "#eeeeee" }}>About</li></a>
-                <a href='#' style={{ textDecoration: "none", color: "#222222" }}><li style={{ color: "#eeeeee" }}>Portfolio</li></a>
-                <a style={{ textDecoration: "none" }}><li style={{ color: "#eeeeee" }}>Contact</li></a>
+                <a href='#about' style={{ textDecoration: "none" }}><li style={{ color: "#eeeeee" }}>About</li></a>
+                <a href='#projects' style={{ textDecoration: "none", color: "#222222" }}><li style={{ color: "#eeeeee" }}>Portfolio</li></a>
+                <a href="#contact" style={{ textDecoration: "none" }}><li style={{ color: "#eeeeee" }}>Contact</li></a>
             </ul>
         </nav>
     )

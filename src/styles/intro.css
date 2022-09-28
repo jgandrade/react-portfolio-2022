@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   padding: 3em 15em;
-  margin-top: 10em;
+  margin-top: 8em;
 }
 .intros #intro {
   text-align: left;
   height: 50vh;
   width: 50%;
+  margin-top: 2em;
 }
 .intros #intro-2 {
   text-align: right;

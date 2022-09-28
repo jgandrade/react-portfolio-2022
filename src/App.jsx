@@ -6,6 +6,10 @@ import Intro from "./components/Intro";
 import Nav from "./components/Nav";
 import SideLinks from "./components/SideLinks";
 import Loading from './components/Loading';
+import OtherProjects from './components/OtherProjects';
+import Tools from './components/Tools';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -35,6 +39,10 @@ function App() {
         <Intro />
         <About />
         <Projects />
+        <OtherProjects />
+        <Tools />
+        <Contact />
+        <Footer />
       </div>
   )
 }

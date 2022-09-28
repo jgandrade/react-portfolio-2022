@@ -3,13 +3,38 @@ import '../styles/projects.css';
 
 function Projects() {
     return (
-        <div className='projects'>
+        <div id="projects" className='projects'>
             <h2>Projects</h2>
-            <div>
-                <img srcSet='./backend.PNG' />
-                <div>
+            <div className='project'>
+                <div className='image'>
+                    <a href='https://ecommerce-app-jgandrade.vercel.app/' target="_blank"><img srcSet='./ecommerce.PNG' /></a>
+                </div>
+                <div className='proj-desc'>
                     <h3>E-Commerce</h3>
-                    <p></p>
+                    <p>A full stack ecommerce web app created using the MERN Stack</p>
+                    <button>View Live</button>
+                    <button>View Code</button>
+                </div>
+            </div>
+            <div className='project'>
+                <div className='image'>
+                    <a href='https://github.com/jgandrade/ecommerce-api-revised' target="_blank"><img srcSet='./backend.PNG' /></a>
+                </div>
+                <div className='proj-desc'>
+                    <h3>E-Commerce Backend</h3>
+                    <p>A Backend for the E-Commerce App. Where NodeJS, ExpressJS and MongoDB was used</p>
+                    <button>View Code</button>
+                </div>
+            </div>
+            <div className='project'>
+                <div className='image'>
+                    <a href="https://jgandrade.github.io/my-portfolio/" target="_blank"><img srcSet='./portfolio.PNG' /></a>
+                </div>
+                <div className='proj-desc'>
+                    <h3>Developer Portfolio</h3>
+                    <p>A portfolio made as a capstone for the bootcamp I came from</p>
+                    <button>View Live</button>
+                    <button>View Code</button>
                 </div>
             </div>
         </div>

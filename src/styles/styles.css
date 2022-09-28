@@ -30,6 +30,7 @@ html body {
 h1 {
   font-family: "Source Serif Pro";
   color: var(--main-color);
+  cursor: default;
 }
 
 h2,
@@ -39,6 +40,16 @@ h5,
 h6 {
   font-family: "Roboto Slab", "serif";
   color: var(--main-color);
+  transition: text-shadow 0.3s ease-in-out;
+  cursor: default;
+}
+
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+  text-shadow: 1px 1px 5px rgb(250, 99, 99);
 }
 
 p,
@@ -47,6 +58,7 @@ li {
   text-decoration: none;
   list-style-type: none;
   color: var(--main-color);
+  cursor: default;
 }
 
 .App {

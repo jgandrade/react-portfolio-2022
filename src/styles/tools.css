@@ -1,0 +1,40 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 5em 10em;
+}
+.tools h2 {
+  color: #eeeeee;
+  align-self: flex-start;
+  font-size: 2em;
+  margin-bottom: 2em;
+}
+.tools p {
+  color: #222222;
+  font-weight: bold;
+}
+.tools div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.tools div div {
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 1em;
+  box-shadow: 1px 1px 10px #222222;
+  padding: 1em 2em;
+  transition: all 0.3s ease-in-out;
+}
+.tools div div:hover {
+  scale: 1.1;
+}/*# sourceMappingURL=tools.css.map */

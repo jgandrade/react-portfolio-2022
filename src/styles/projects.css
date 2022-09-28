@@ -1,3 +1,60 @@
 .projects {
-  height: 100vh;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10em 5em;
+}
+.projects h2 {
+  font-size: 7em;
+  margin-left: 0.4em;
+}
+.projects .image {
+  width: 500px;
+  height: 400px;
+}
+.projects .image img {
+  border: none;
+  border-radius: 0.2em;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(1);
+  transition: all 0.3s ease-out;
+}
+.projects .image img:hover {
+  filter: grayscale(0);
+  scale: 1.1;
+}
+.projects .project {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.projects .project .proj-desc {
+  width: 40%;
+}
+.projects .project button {
+  background-color: rgb(250, 99, 99);
+  color: white;
+  border: none;
+  border-radius: 0.2em;
+  padding: 1em 4em;
+  margin: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.projects .project button:hover {
+  background-color: #222222;
+  scale: 1.05;
+  color: rgb(250, 99, 99);
+}
+.projects .project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.projects .project:nth-child(odd) {
+  text-align: right;
 }/*# sourceMappingURL=projects.css.map */

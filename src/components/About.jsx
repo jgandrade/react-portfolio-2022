@@ -6,7 +6,7 @@ function About() {
 
     return (
         <>
-            <div className='about'>
+            <div id="about" className='about'>
                 <div >
                     <h2>Hey I'm Glenn!</h2>
                     <p>I am a full stack developer who recently graduated from <a href='https://zuitt.co/' target="_blank">Zuitt</a> bootcamp. </p>

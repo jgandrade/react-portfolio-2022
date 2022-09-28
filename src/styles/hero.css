@@ -7,6 +7,22 @@
   justify-content: center;
   align-items: center;
 }
+.hero button {
+  background-color: rgb(250, 99, 99);
+  color: white;
+  border: none;
+  border-radius: 5em;
+  padding: 1em 4em;
+  margin: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, scale 0.3s ease-in-out;
+}
+.hero button:hover {
+  background-color: #222222;
+  scale: 1.05;
+  color: rgb(250, 99, 99);
+}
 .hero .hero-name {
   width: 500px;
   display: flex;

@@ -7,7 +7,7 @@ function Intro() {
 
     return (
         <>
-            <div className='intros'>
+            <div id="intro-container" className='intros'>
                 <div id='intro'>
                     <h2>Simplicity, Elegance, Creativity</h2>
                     <p>Three things that I want to accomplish to my future projects including this one.</p>
