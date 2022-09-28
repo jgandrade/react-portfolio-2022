@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/nav.css';
 
+
 function Nav() {
     return (
         <nav>
-            <a href='#' style={{ textDecoration: "none" }}><h1>jg.</h1></a>
+            <a href='#' style={{ textDecoration: "none" }}><h1 style={{ color: "#eeeeee" }}>jg.</h1></a>
             <ul>
-                <a href='#' style={{ textDecoration: "none" }}><li>About</li></a>
-                <a href='#' style={{ textDecoration: "none" }}><li>Work</li></a>
-                <a href='#' style={{ textDecoration: "none" }}><li>Contact</li></a>
+                <a href='#' style={{ textDecoration: "none" }}><li style={{ color: "#eeeeee" }}>About</li></a>
+                <a href='#' style={{ textDecoration: "none", color: "#222222" }}><li style={{ color: "#eeeeee" }}>Portfolio</li></a>
+                <a style={{ textDecoration: "none" }}><li style={{ color: "#eeeeee" }}>Contact</li></a>
             </ul>
         </nav>
     )

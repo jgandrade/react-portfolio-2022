@@ -1,0 +1,54 @@
+.about {
+  background-color: #eeeeee;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10em 15em 0em 15em;
+  display: flex;
+  flex-direction: column;
+}
+.about img {
+  filter: grayscale(1);
+  width: 500px;
+}
+.about h2 {
+  color: rgb(250, 99, 99);
+  font-size: 5em;
+}
+.about p {
+  color: #222222;
+  font-size: 3em;
+  margin-bottom: 3em;
+  font-weight: bold;
+}
+.about div + div {
+  align-self: flex-end;
+  text-align: left;
+  width: 70%;
+}
+.about div + div h2 {
+  color: rgb(250, 99, 99);
+  font-size: 3em;
+}
+.about div + div p {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 6em;
+}
+.about div + div + div {
+  margin-bottom: 10em;
+  align-self: center;
+  text-align: right;
+}
+.about div + div + div h2 {
+  font-size: 7em;
+}
+.about div + div + div ul li {
+  color: white;
+  text-shadow: -1px -1px 0 rgb(252, 155, 155), 1px -1px 0 rgb(252, 155, 155), -1px 1px 0 rgb(252, 155, 155), 1px 1px 0 rgb(252, 155, 155);
+  font-size: 4em;
+  transition: all 0.3s ease-out;
+}
+.about div + div + div ul li:hover {
+  color: rgb(252, 155, 155);
+}/*# sourceMappingURL=about.css.map */

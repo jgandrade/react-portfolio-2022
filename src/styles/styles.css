@@ -15,7 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+html body {
   background-color: #111111;
 }
 
@@ -47,4 +47,22 @@ li {
   text-decoration: none;
   list-style-type: none;
   color: var(--main-color);
+}
+
+.App {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s forwards ease-out;
+          animation: fadeIn 1s forwards ease-out;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

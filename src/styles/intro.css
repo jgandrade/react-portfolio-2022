@@ -1,4 +1,47 @@
-#intro {
-  height: 100vh;
-  width: 100%;
+.intros {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 15em;
+  margin-top: 10em;
+}
+.intros #intro {
+  text-align: left;
+  height: 50vh;
+  width: 50%;
+}
+.intros #intro-2 {
+  text-align: right;
+  height: 50vh;
+  width: 50%;
+  align-self: flex-end;
+}
+.intros .intro-3 {
+  text-align: center;
+  width: 40%;
+  height: 50vh;
+  align-self: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .intros {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 4em;
+  }
+  .intros #intro {
+    text-align: left;
+    height: 50vh;
+    width: 100%;
+  }
+  .intros #intro-2 {
+    text-align: right;
+    height: 50vh;
+    width: 100%;
+  }
+  .intros .intro-3 {
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    align-self: center;
+  }
 }/*# sourceMappingURL=intro.css.map */
