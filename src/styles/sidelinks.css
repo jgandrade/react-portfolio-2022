@@ -27,4 +27,7 @@
     z-index: 2000;
     width: 100px !important;
   }
+  .side-links svg {
+    filter: drop-shadow(1px 1px 5px rgb(255, 99, 99));
+  }
 }/*# sourceMappingURL=sidelinks.css.map */

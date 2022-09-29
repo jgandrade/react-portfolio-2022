@@ -11,8 +11,8 @@ nav {
     backdrop-filter: blur(8px);
     z-index: 999;
     h1 {
-        animation: fadeInOut 1s alternate infinite ease-in-out;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        text-shadow: 1px 1px 5px rgb(255, 99, 99);
     }
     ul {
         display: flex;
@@ -23,18 +23,12 @@ nav {
             margin: 0em 0.4em;
             cursor: pointer;
             transition: transform 0.3s ease-out, color 0.3s ease-out;
-            animation: fadeInOut 1s alternate infinite ease-in-out;
+            text-shadow: 1px 1px 5px rgb(255, 99, 99);
         }
 
         a:hover li {
             transform: translateY(-5px);
             color: lightcoral !important;
-        }
-    }
-
-    @keyframes fadeInOut {
-        to {
-            text-shadow: 1px 1px 5px rgb(255, 99, 99);
         }
     }
     .menu-btn {
@@ -77,6 +71,7 @@ nav {
             animation: jumpIn 0.2s ease-out forwards;
             li {
                 font-size: 3em;
+                text-shadow: none;
             }
 
             @keyframes jumpIn {

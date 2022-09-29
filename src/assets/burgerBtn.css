@@ -15,7 +15,7 @@
     height: 3px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px rgb(255, 99, 99);
     transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
 }
 
@@ -27,7 +27,7 @@
     height: 3px;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    box-shadow: 0 2px 5px rgb(255, 99, 99);
     transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
 }
 
