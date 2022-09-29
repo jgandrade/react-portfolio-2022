@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/contact.css';
+import Swal from 'sweetalert2';
 
 export default function Contact() {
 
@@ -11,11 +12,24 @@ export default function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        alert('Email Sent');
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your message has been sent to johnglennandrade@gmail.com',
+            showConfirmButton: false,
+            timer: 1500
+        });
+
+        setFormData({
+            name: "",
+            email: "",
+            message: ""
+        });
     }
 
     function handleChange(e) {
         const { name, value } = e.target;
+
         return setFormData(prevValue => {
             return {
                 ...prevValue,
