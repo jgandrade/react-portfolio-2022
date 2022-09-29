@@ -7,15 +7,15 @@ function About() {
     return (
         <>
             <div id="about" className='about'>
-                <div data-aos="zoom-in-right">
+                <div data-aos="fade-up">
                     <h2>Hey I'm Glenn!</h2>
                     <p>I am a full stack developer who recently graduated from <a href='https://zuitt.co/' target="_blank">Zuitt</a> bootcamp. </p>
                 </div>
-                <div data-aos="zoom-in-left">
+                <div data-aos="fade-up">
                     <h2>Short Story</h2>
                     <p>I'm just a guy who one day, randomly helped a friend on his assignment in Javascript. I had no knowledge in it, so I did use Java to answer his assignment. Few weeks after that day, I decided to study Javascript and was entirely astonished by the idea of web development and how it works. And here I am today, more than happy to study new frameworks/libraries everyday.</p>
                 </div>
-                <div data-aos="zoom-in-left">
+                <div data-aos="fade-up">
                     <h2>What I Do //</h2>
                     <ul>
                         <li>Static Websites</li>
