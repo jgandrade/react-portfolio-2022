@@ -52,8 +52,7 @@ export default function Contact() {
                             message: formData.message
                         })
                     }).then(res => res.json())
-                        .then(dataForm => {
-                            console.log(dataForm);
+                        .then(dataForm => {                            
                             Swal.fire({
                                 position: 'top-end',
                                 icon: 'success',
@@ -85,7 +84,7 @@ export default function Contact() {
     function onChange(value) {
         return setCaptchaToken(value);
     }
-    console.log(captchaToken);
+    
     return (
         <div id="contact" className='contact'>
             <h2>Connect With Me</h2>
