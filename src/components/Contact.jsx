@@ -29,7 +29,7 @@ export default function Contact() {
             });
         }
 
-        fetch(`${process.env.VITE_CAPTCHA_URL}`, {
+        fetch(`${import.meta.env.VITE_CAPTCHA_URL}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -41,7 +41,7 @@ export default function Contact() {
             .then(response => response.json())
             .then(data => {
                 if (data.status === true) {
-                    fetch(`${process.env.VITE_FORM_URL}`, {
+                    fetch(`${import.meta.env.VITE_FORM_URL}`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
@@ -97,7 +97,7 @@ export default function Contact() {
                     <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Your email' required />
                     <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Your Message' rows="10" required />
                     <ReCAPTCHA
-                        sitekey={process.env.VITE_SITE_KEY}
+                        sitekey={import.meta.env.VITE_SITE_KEY}
                         onChange={onChange}
                     />
                     <button>Submit</button>
