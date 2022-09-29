@@ -12,19 +12,35 @@ export default function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Your message has been sent to johnglennandrade@gmail.com',
-            showConfirmButton: false,
-            timer: 1500
-        });
+       
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: import.meta.env.VITE_APP_E,
+            Password: import.meta.env.VITE_APP_EP,
+            To: import.meta.env.VITE_APP_E2,
+            From: formData.email,
+            Subject: `A message from ${formData.name}, coming from your portfolio`,
+            Body: `Message: ${formData.message}`
+        }).then(
+            message => {
+                console.log(message)
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Your message has been sent to johnglennandrade@gmail.com',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
 
-        setFormData({
-            name: "",
-            email: "",
-            message: ""
-        });
+                setFormData({
+                    name: "",
+                    email: "",
+                    message: ""
+                });
+            }
+        );
+
+
     }
 
     function handleChange(e) {

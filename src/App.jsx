@@ -15,7 +15,6 @@ import 'aos/dist/aos.css';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  console.log(import.meta.env.VITE_APP_SECRET_MESSAGE);
 
   useEffect(() => {
     localStorage.getItem("loadingDone") ?
