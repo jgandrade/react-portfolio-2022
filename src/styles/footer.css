@@ -16,4 +16,11 @@ footer li {
 }
 footer li:hover {
   color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  footer {
+    padding: 0em 1em;
+    align-items: center;
+  }
 }/*# sourceMappingURL=footer.css.map */

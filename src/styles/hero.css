@@ -12,7 +12,7 @@
   color: white;
   border: none;
   border-radius: 5em;
-  padding: 1em 4em;
+  padding: 1em 2em;
   margin: 0.5em;
   font-weight: bold;
   cursor: pointer;
@@ -65,18 +65,21 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
   .hero {
     width: 100%;
-    padding: 0 0 0 1.5em;
+    padding: 0em;
     flex-direction: column;
   }
   .hero .hero-name {
     width: 320px;
-    align-self: flex-start;
+    align-self: center;
   }
   .hero .hero-name h2 {
     font-size: 3em;
+  }
+  .hero .hero-name * {
+    text-align: center;
   }
   .hero .side-hero {
     display: flex;
@@ -90,9 +93,19 @@
     width: 320px;
     font-size: 2em;
   }
+  .hero .side-hero * {
+    text-align: center;
+  }
   .hero .go-down {
     position: absolute;
     bottom: 5%;
-    left: 43%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #side-hero h2 {
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=hero.css.map */

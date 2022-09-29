@@ -26,7 +26,7 @@
   flex-wrap: wrap;
 }
 .tools div div {
-  background-color: #dddddd;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   border: none;
@@ -37,4 +37,15 @@
 }
 .tools div div:hover {
   scale: 1.1;
+}
+
+@media only screen and (max-width: 768px) {
+  .tools {
+    padding: 5em 5em;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .tools {
+    padding: 5em 2em;
+  }
 }/*# sourceMappingURL=tools.css.map */

@@ -72,4 +72,60 @@
 .other-proj:nth-child(even) .other-proj-info {
   text-align: left;
   align-items: flex-start;
+}
+
+@media only screen and (max-width: 1220px) {
+  .other-projects-cont {
+    padding: 0em 6em;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .other-projects {
+    padding: 2em 3em;
+  }
+  .other-projects .h2-other-proj {
+    font-size: 4em;
+    margin-top: 1em;
+  }
+  .other-proj img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .h2-other-proj {
+    font-size: 3em;
+  }
+  .other-projects {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .other-proj img {
+    width: 270px;
+  }
+  .other-proj-info {
+    width: 100% !important;
+  }
+  .other-proj:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .other-proj:nth-child(even) .other-proj-info {
+    text-align: center;
+    align-items: center;
+  }
+  .other-proj:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .other-proj:nth-child(odd) .other-proj-info {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .h2-other-proj {
+    font-size: 3em !important;
+  }
+  .other-projects-cont {
+    padding: 0em 0em;
+  }
 }/*# sourceMappingURL=otherprojects.css.map */

@@ -128,7 +128,7 @@ function Hero() {
                 </a>
             </motion.div>
 
-            <div className='side-hero'>
+            <div id="side-hero" className='side-hero'>
                 {mainHeadline2}
             </div>
         </div>

@@ -23,11 +23,16 @@
   align-self: center;
 }
 
+@media only screen and (max-width: 992px) {
+  .intros {
+    padding: 3em 6em;
+  }
+}
 @media only screen and (max-width: 576px) {
   .intros {
     display: flex;
     flex-direction: column;
-    padding: 3em 4em;
+    padding: 3em 2em;
   }
   .intros #intro {
     text-align: left;

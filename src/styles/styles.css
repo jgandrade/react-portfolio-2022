@@ -30,7 +30,7 @@ html body {
 h1 {
   font-family: "Source Serif Pro";
   color: var(--main-color);
-  cursor: default;
+  cursor: pointer;
 }
 
 h2,

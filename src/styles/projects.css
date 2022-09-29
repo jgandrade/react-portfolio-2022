@@ -57,4 +57,53 @@
 }
 .projects .project:nth-child(odd) {
   text-align: right;
+}
+
+@media only screen and (max-width: 992px) {
+  .projects {
+    padding: 10em 2em;
+  }
+  .projects h2 {
+    font-size: 5em;
+    margin-left: 0.4em;
+  }
+  .projects .image {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projects {
+    padding: 10em 2em;
+  }
+  .projects h2 {
+    font-size: 3em;
+    margin-left: 0.4em;
+  }
+  .projects .image {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .projects {
+    text-align: center;
+  }
+  .projects h2 {
+    margin: 0;
+  }
+  .project {
+    gap: 2em;
+  }
+  .project:nth-child(even) {
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
+  .project:nth-child(odd) {
+    flex-direction: column-reverse;
+    text-align: center !important;
+  }
+  .proj-desc {
+    width: 70% !important;
+  }
 }/*# sourceMappingURL=projects.css.map */

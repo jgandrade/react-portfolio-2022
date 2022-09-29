@@ -7,6 +7,10 @@
   display: flex;
   flex-direction: column;
 }
+.about a {
+  text-decoration: underline;
+  color: rgb(250, 99, 99);
+}
 .about img {
   filter: grayscale(1);
   width: 500px;
@@ -51,4 +55,62 @@
 }
 .about div + div + div ul li:hover {
   color: rgb(252, 155, 155);
+}
+
+@media only screen and (max-width: 992px) {
+  .about {
+    padding: 10em 10em 0em 10em;
+  }
+  .about h2 {
+    font-size: 3.5em;
+  }
+  .about p {
+    font-size: 2em;
+  }
+  .about div + div h2 {
+    font-size: 2em;
+  }
+  .about div + div p {
+    font-size: 1em;
+  }
+  .about div + div + div h2 {
+    font-size: 4em;
+  }
+  .about div + div + div ul li {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about {
+    padding: 10em 7em 0em 7em;
+  }
+  .about h2 {
+    font-size: 3em;
+  }
+  .about p {
+    font-size: 1.5em;
+  }
+  .about div + div + div h2 {
+    font-size: 3.5em;
+  }
+  .about div + div + div ul li {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .about {
+    padding: 10em 2em 0em 2em;
+  }
+  .about h2 {
+    font-size: 3em;
+  }
+  .about p {
+    font-size: 1.5em;
+  }
+  .about div + div + div h2 {
+    font-size: 3.5em;
+  }
+  .about div + div + div ul li {
+    font-size: 2em;
+  }
 }/*# sourceMappingURL=about.css.map */
