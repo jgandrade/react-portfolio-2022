@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/contact.css';
 import Swal from 'sweetalert2';
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Contact() {
+    const [captchaToken, setCaptchaToken] = useState("");
 
     const [formData, setFormData] = useState({
         name: "",
@@ -12,35 +14,61 @@ export default function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
-       
-        Email.send({
-            Host: "smtp.gmail.com",
-            Username: import.meta.env.VITE_APP_E,
-            Password: import.meta.env.VITE_APP_EP,
-            To: import.meta.env.VITE_APP_E2,
-            From: formData.email,
-            Subject: `A message from ${formData.name}, coming from your portfolio`,
-            Body: `Message: ${formData.message}`
-        }).then(
-            message => {
-                console.log(message)
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'Your message has been sent to johnglennandrade@gmail.com',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
 
-                setFormData({
-                    name: "",
-                    email: "",
-                    message: ""
-                });
-            }
-        );
+        if (
+            captchaToken === undefined ||
+            captchaToken === '' ||
+            captchaToken === null
+        ) {
+            return Swal.fire({
+                position: 'top-end',
+                icon: 'error',
+                title: 'Please tick the button for the captcha to proceed',
+                showConfirmButton: false,
+                timer: 1000
+            });
+        }
 
-
+        fetch(`${import.meta.env.VITE_CAPTCHA_URL}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                captcha: captchaToken
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === true) {
+                    fetch(`${import.meta.env.VITE_FORM_URL}`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            name: formData.name,
+                            email: formData.email,
+                            message: formData.message
+                        })
+                    }).then(res => res.json())
+                        .then(dataForm => {
+                            console.log(dataForm);
+                            Swal.fire({
+                                position: 'top-end',
+                                icon: 'success',
+                                title: 'Your message has been sent to johnglennandrade@gmail.com',
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                            setFormData({
+                                name: "",
+                                email: "",
+                                message: ""
+                            });
+                        });
+                }
+            });
     }
 
     function handleChange(e) {
@@ -54,6 +82,10 @@ export default function Contact() {
         })
     }
 
+    function onChange(value) {
+        return setCaptchaToken(value);
+    }
+    console.log(captchaToken);
     return (
         <div id="contact" className='contact'>
             <h2>Connect With Me</h2>
@@ -62,12 +94,17 @@ export default function Contact() {
             </svg> johnglenn.andrade@gmail.com</p>
             <div>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Your name' required></input>
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Your email' required></input>
-                    <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Your Message' rows="10" required></textarea>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder='Your name' required />
+                    <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Your email' required />
+                    <textarea name="message" value={formData.message} onChange={handleChange} placeholder='Your Message' rows="10" required />
+                    <ReCAPTCHA
+                        sitekey={import.meta.env.VITE_SITE_KEY}
+                        onChange={onChange}
+                    />
                     <button>Submit</button>
                 </form>
             </div>
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         </div>
     )
 }
