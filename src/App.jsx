@@ -10,6 +10,8 @@ import OtherProjects from './components/OtherProjects';
 import Tools from './components/Tools';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [loading, setLoading] = useState(true);

@@ -6,12 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="#">
   <link rel="icon" href="./johnglennlogo-black.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>jgandrade | web</title>
 </head>
 
 <body>
   <div id="root"></div>
   <script type="module" src="/src/index.jsx"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1000,
+      offset: 180
+    });
+  </script>
+
 </body>
 
 </html>
