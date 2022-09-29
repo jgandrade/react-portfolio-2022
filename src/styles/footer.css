@@ -11,6 +11,7 @@ footer a {
   text-decoration: none;
 }
 footer li {
+  cursor: pointer;
   color: gray;
   transition: all 0.3s ease-in;
 }
