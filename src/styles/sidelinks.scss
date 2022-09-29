@@ -6,11 +6,13 @@
 
     ul {
         display: flex;
+        align-items: center;
         li {
             margin: 0em 0.3em;
             transition: all 0.3s var(--main-transition);
+            cursor: pointer;
         }
-       
+
         a:hover li {
             transform: translateY(-10px);
             opacity: 1;
@@ -20,6 +22,10 @@
 
 @media only screen and (max-width: 576px) {
     .side-links {
-        display: none;
+        transform: rotate(0deg);
+        position: fixed;
+        top: 3%;
+        left: 41%;
+        z-index: 2000;
     }
 }
