@@ -48,6 +48,17 @@ function Projects() {
                     <a href="https://github.com/jgandrade/todolist-app-v3" target="_blank"><button>View Code</button></a>
                 </div>
             </div>
+            <div className='project'>
+                <div className='image' data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://musikapp-8rzf.vercel.app/" target="_blank"><img srcSet='./musikapp.png' /></a>
+                </div>
+                <div className='proj-desc' data-aos="fade-up">
+                    <h3>Musikapp</h3>
+                    <p>A Music App built using Tailwind CSS and help using Redux Toolkit</p>
+                    <a href="https://musikapp-8rzf.vercel.app/" target="_blank"><button>View Live</button></a>
+                    <a href="https://github.com/jgandrade/Musikapp" target="_blank"><button>View Code</button></a>
+                </div>
+            </div>
         </div>
     )
 }
